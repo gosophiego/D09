@@ -11,8 +11,20 @@
 #     returns their sum.
 ###############################################################################
 # Imports
-
+import inspect
 # Body
+def sumall(*args):
+    total = 0
+    n = 0
+    while True:
+        try:
+            total += args[n]
+            n += 1
+        except Exception:
+            break
+    return total
+
+
 
 
 ##############################################################################

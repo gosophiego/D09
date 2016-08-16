@@ -12,7 +12,22 @@
 
 # Body
 def most_frequent(s):
-    ...
+    # Make a dictionary that lists each character as a key
+    # and the character's number appearance as a value
+    d = dict()
+    for c in s.lower():
+        d[c] = d.get(c, 0) + 1
+    # Swap keys and values 
+    swap = dict()
+    for cha, freq in d.items():
+        swap[freq] = cha
+    # sort the swap dictionary in a descending key order
+    sorted(swap, reverse=True)
+    print(swap)
+
+
+
+    
 
 
 ###############################################################################
